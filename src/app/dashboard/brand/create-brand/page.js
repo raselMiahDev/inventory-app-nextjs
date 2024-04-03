@@ -40,8 +40,8 @@ const page = () => {
   };
   return (
     <div className="">
-      <div className="bg-slate-800 md:px-10 py-5">
-        <h1 className=" text-2xl text-slate-300">Create Brand</h1>
+      <div className=" md:px-10 py-5">
+        <h1 className=" text-2xl text-slate-700">Create Brand</h1>
       </div>
 
       {/* form  */}

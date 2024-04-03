@@ -45,8 +45,8 @@ const page = () => {
   };
   return (
     <div className="">
-      <div className="bg-slate-800 md:px-10 py-5">
-        <h1 className=" text-2xl text-slate-300">Create expense</h1>
+      <div className="md:px-10 py-5">
+        <h1 className=" text-2xl text-slate-600">Create expense</h1>
       </div>
 
       {/* form  */}

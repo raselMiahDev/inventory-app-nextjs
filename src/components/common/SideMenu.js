@@ -44,6 +44,59 @@ const SideMenu = () => {
         },
       ],
     },
+
+    {
+      buttonText: "Purchase",
+      subMenu: [
+        {
+          title: "Create Purchase",
+          href: "/dashboard/purchase/create-purchase",
+        },
+        {
+          title: "Products List",
+          href: "/dashboard/purchase/purchase-list",
+        },
+      ],
+    },
+    {
+      buttonText: "Sells",
+      subMenu: [
+        {
+          title: "Create Sells",
+          href: "/dashboard/sells/create-sells",
+        },
+        {
+          title: "Sells List",
+          href: "/dashboard/sells/sells-list",
+        },
+      ],
+    },
+    {
+      buttonText: "Expense Type",
+      subMenu: [
+        {
+          title: "Create Expense",
+          href: "/dashboard/expenseType/create-expenseType",
+        },
+        {
+          title: "Expense List",
+          href: "/dashboard/expenseType/expenseType-list",
+        },
+      ],
+    },
+    {
+      buttonText: "Expense",
+      subMenu: [
+        {
+          title: "Create Expense",
+          href: "/dashboard/expense/create-expense",
+        },
+        {
+          title: "Expense List",
+          href: "/dashboard/expense/expense-list",
+        },
+      ],
+    },
     {
       buttonText: "Brands",
       subMenu: [
@@ -69,7 +122,7 @@ const SideMenu = () => {
         {/* Navigation Toggle */}
         <button
           type="button"
-          className="text-gray-200 hover:text-gray-600 bg-blue-700 w-96"
+          className="text-gray-200 hover:text-gray-600 w-96"
           data-hs-overlay="#docs-sidebar"
           aria-controls="docs-sidebar"
           aria-label="Toggle navigation"

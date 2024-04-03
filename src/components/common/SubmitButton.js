@@ -9,7 +9,7 @@ const SubmitButton = (props) => {
     return (
       <button disabled={true} className={props.className}>
         <div
-          className="animate-spin inline-block size-6 border-[3px] border-current border-t-transparent text-blue-600 rounded-full dark:text-blue-500"
+          className="bg-blue-700 py-2 block rounded-md text-white font-semibold hover:bg-blue-900"
           role="status"
           aria-label="loading"
         >

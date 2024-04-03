@@ -7,36 +7,53 @@ const ListTable = (props) => {
         <div className="-m-1.5 overflow-x-auto">
           <div className="p-1.5 min-w-full inline-block align-middle">
             <div className="overflow-hidden">
-              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                <thead className="bg-slate-800">
+              <div className="py-5 px-5 flex justify-between">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Search Here"
+                    className="border-purple-300 border-2 p-2 rounded-md focus:outline-none focus:ring-0 w-72"
+                  />
+                </div>
+                <div>
+                  <select>
+                    <option>10</option>
+                    <option>10</option>
+                    <option>10</option>
+                    <option>10</option>
+                  </select>
+                </div>
+              </div>
+              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 table">
+                <thead className="bg-purple-400">
                   <tr>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-start text-xs font-medium text-gray-300 uppercase"
+                      className="px-6 py-3 text-start text-xs font-medium text-gray-100 uppercase"
                     >
                       Name
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-start text-xs font-medium text-gray-300 uppercase"
+                      className="px-6 py-3 text-start text-xs font-medium text-gray-100 uppercase"
                     >
                       Email
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-start text-xs font-medium text-gray-300 uppercase"
+                      className="px-6 py-3 text-start text-xs font-medium text-gray-100 uppercase"
                     >
                       Phone Number
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-start text-xs font-medium text-gray-300 uppercase"
+                      className="px-6 py-3 text-start text-xs font-medium text-gray-100 uppercase"
                     >
                       Address
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-end text-xs font-medium text-gray-300 uppercase"
+                      className="px-6 py-3 text-end text-xs font-medium text-gray-100 uppercase"
                     >
                       Action
                     </th>

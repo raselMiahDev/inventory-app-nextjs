@@ -4,7 +4,9 @@ import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 import PrelineScript from "../components/common/PrelineScript.tsx";
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
-
+import { Toaster } from "react-hot-toast";
+import { Provider } from "react-redux";
+import store from "@/redux/store/store";
 const inter = Inter({ subsets: ["latin"] });
 
 const metadata = {
@@ -18,8 +20,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <ProgressBar height="4px" />
         {/* <Navbar /> */}
-        {children}
-
+        <Provider store={store}>{children}</Provider>
+        <Toaster />
         <PrelineScript />
       </body>
     </html>
