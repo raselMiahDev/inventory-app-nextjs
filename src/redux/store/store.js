@@ -1,18 +1,17 @@
 import { configureStore } from "@reduxjs/toolkit";
-import dynamic from "next/dynamic";
-const dashboardSlice = () => dynamic(import("./../slice/dashboardSlice"));
-const profileSlice = () => dynamic(import("./../slice/profileSlice"));
-const brandSlice = () => dynamic(import("./../slice/brandSlice"));
-const supplierSlice = () => dynamic(import("./../slice/supplierSlice"));
-const categorySlice = () => dynamic(import("./../slice/categorySlice"));
-const customerSlice = () => dynamic(import("./../slice/customerSlice"));
-const expenseSlice = () => dynamic(import("./../slice/expenseSlice"));
-const expenseTypeSlice = () => dynamic(import("./../slice/expenseTypeSlice"));
-const purchaseSlice = () => dynamic(import("./../slice/purchaseSlice"));
-const reportSlice = () => dynamic(import("./../slice/reportSlice"));
-const productSlice = () => dynamic(import("./../slice/productSlice"));
-const returnSlice = () => dynamic(import("./../slice/returnSlice"));
-const sallsSlice = () => dynamic(import("./../slice/sellSlice"));
+import dashboardSlice from "../slice/dashboardSlice";
+import profileSlice from "../slice/profileSlice";
+import brandSlice from "../slice/brandSlice";
+import supplierSlice from "../slice/supplierSlice";
+import categorySlice from "../slice/categorySlice";
+import customerSlice from "../slice/customerSlice";
+import expenseSlice from "../slice/expenseSlice";
+import expenseTypeSlice from "../slice/expenseTypeSlice";
+import purchaseSlice from "../slice/purchaseSlice";
+import reportSlice from "../slice/reportSlice";
+import productSlice from "../slice/productSlice";
+import returnSlice from "../slice/returnSlice";
+import sallsSlice from "../slice/sellSlice";
 export default configureStore({
   reducer: {
     dashboard: dashboardSlice,

@@ -50,5 +50,5 @@ export const {
   SetSaleListTotal,
   SetCustomerDropDown,
   OnChangeSaleInput,
-} = saleSlice.actions;
+} = sellSlice.actions;
 export default sellSlice.reducer;

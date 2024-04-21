@@ -120,27 +120,29 @@ const SideMenu = () => {
     <div className="block">
       <>
         {/* Navigation Toggle */}
-        <button
-          type="button"
-          className="text-gray-200 hover:text-gray-600 w-96"
-          data-hs-overlay="#docs-sidebar"
-          aria-controls="docs-sidebar"
-          aria-label="Toggle navigation"
-        >
-          <span className="sr-only">Toggle Navigation</span>
-          <svg
-            className="flex-shrink-0 size-10"
-            width={20}
-            height={20}
-            fill="currentColor"
-            viewBox="0 0 16 16"
+        <div className="w-12 bg-blue-500">
+          <button
+            type="button"
+            className="text-gray-100"
+            data-hs-overlay="#docs-sidebar"
+            aria-controls="docs-sidebar"
+            aria-label="Toggle navigation"
           >
-            <path
-              fillRule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-            />
-          </svg>
-        </button>
+            <span className="sr-only">Toggle Navigation</span>
+            <svg
+              className="flex-shrink-0 size-10"
+              width={20}
+              height={20}
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fillRule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+        </div>
         {/* End Navigation Toggle */}
         <div
           id="docs-sidebar"

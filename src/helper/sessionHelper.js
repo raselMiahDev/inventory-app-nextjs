@@ -3,7 +3,8 @@ class Session {
     return localStorage.setItem("token", token);
   }
   getToken() {
-    return localStorage.getItem("token");
+    const token = localStorage.getItem("token");
+    return token;
   }
 }
 

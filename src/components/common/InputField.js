@@ -2,8 +2,8 @@ import React from "react";
 
 const InputField = (props) => {
   return (
-    <div>
-      <label className="block text-sm font-medium text-gray-700">
+    <div className="mb-2">
+      <label className="block text-sm font-medium text-gray-700 mb-1">
         {props.label}
       </label>
 
@@ -12,7 +12,7 @@ const InputField = (props) => {
         name={props.name}
         value={props.value}
         onChange={props.onChange}
-        className="py-3 px-4 block w-full border-gray-200 rounded-lg text-md focus:border-blue-500 focus:ring-blue-500  dark:bg-slate-100 dark:border-gray-200 dark:text-gray-400 dark:focus:ring-gray-300"
+        className="border p-3 rounded-md focus:border-blue-400 focus:outline-none w-full"
         placeholder={props.placeholder}
       />
     </div>
